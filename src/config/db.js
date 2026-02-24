@@ -33,7 +33,7 @@ const connectDB = async () => {
     } catch (error) {
       console.log(`⏳ Aguardando banco ficar pronto... (${retries} tentativas restantes)`);
       retries -= 1;
-      await new Promise(res => setTimeout(res, 5000));
+      await new Promise(res => setTimeout(res, 7000));
     }
   }
 
